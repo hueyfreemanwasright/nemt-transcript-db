@@ -1,3 +1,4 @@
+// Maps each raw status value to the label shown on the card badge.
 const STATUS_LABELS = {
   scheduled: "Scheduled",
   review: "Needs review",
@@ -5,7 +6,13 @@ const STATUS_LABELS = {
   completed: "Completed",
 };
 
+// TranscriptCard is a presentational component: it holds no state of its own.
+// It receives a single transcript object plus the `isSaved` flag and the
+// `onToggleSave` handler as props. When its button is clicked it calls
+// onToggleSave back up to the parent, which owns the saved list. This is the
+// "lifting state up" pattern: the child triggers a state change in the parent.
 function TranscriptCard({ transcript, isSaved, onToggleSave }) {
+  // Pull the fields out of the one prop object for readable JSX below.
   const {
     id,
     callerName,
@@ -22,6 +29,7 @@ function TranscriptCard({ transcript, isSaved, onToggleSave }) {
   } = transcript;
 
   return (
+    // The saved state only changes styling here; the actual data lives in the parent.
     <article className={`card ${isSaved ? "card--saved" : ""}`}>
       <div className="card__top">
         <div>
@@ -31,6 +39,7 @@ function TranscriptCard({ transcript, isSaved, onToggleSave }) {
         <span className={`badge badge--${status}`}>{STATUS_LABELS[status]}</span>
       </div>
 
+      {/* Signature element: pickup -> dropoff drawn as a transit-style route line. */}
       <div className="route">
         <div className="route__line">
           <span className="route__dot"></span>
@@ -73,6 +82,7 @@ function TranscriptCard({ transcript, isSaved, onToggleSave }) {
       <p className="card__summary">{summary}</p>
 
       <div className="card__footer">
+        {/* Reports this card's id up to the parent instead of changing state locally. */}
         <button
           type="button"
           className={`save-btn ${isSaved ? "save-btn--active" : ""}`}

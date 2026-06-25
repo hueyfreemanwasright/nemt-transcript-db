@@ -1,0 +1,104 @@
+export const transcripts = [
+  {
+    id: "CALL-10482",
+    callerName: "Marcus Whitfield",
+    memberId: "MBR-48213",
+    phone: "(562) 555-0148",
+    callDateTime: "2026-06-23 09:14",
+    pickup: "1420 Pine Ave, Long Beach, CA",
+    dropoff: "LB Dialysis Center, 2776 Pacific Ave",
+    rideDate: "2026-06-25",
+    appointmentTime: "10:30 AM",
+    mobility: "Ambulatory",
+    status: "scheduled",
+    summary:
+      "Recurring dialysis transport confirmed. Member requested the same driver as last week if available.",
+    transcript:
+      "AI: Thank you for calling member transport. May I have your member ID?\nCaller: It's 4 8 2 1 3.\nAI: Thank you, Marcus. Booking your usual dialysis ride?\nCaller: Yes, Thursday at ten thirty.\nAI: Confirmed for June twenty-fifth, pickup at nine forty-five. Anything else?\nCaller: No, that's it.",
+  },
+  {
+    id: "CALL-10483",
+    callerName: "Dolores Ramirez",
+    memberId: "MBR-39740",
+    phone: "(310) 555-0172",
+    callDateTime: "2026-06-23 10:02",
+    pickup: "835 W 7th St, San Pedro, CA",
+    dropoff: "Harbor-UCLA Medical Center, Torrance",
+    rideDate: "2026-06-26",
+    appointmentTime: "08:00 AM",
+    mobility: "Wheelchair",
+    status: "review",
+    summary:
+      "Member states she uses a wheelchair but record shows ambulatory. Equipment type needs confirmation before dispatch.",
+    transcript:
+      "AI: Will you need any mobility assistance for this trip?\nCaller: I'm in a wheelchair now, since my surgery.\nAI: I have you listed as ambulatory. Let me note this for review.\nCaller: Yes, please, it's a manual chair.\nAI: Understood. A coordinator will confirm your equipment before the ride.",
+  },
+  {
+    id: "CALL-10484",
+    callerName: "Henry Osei",
+    memberId: "MBR-51188",
+    phone: "(562) 555-0199",
+    callDateTime: "2026-06-23 10:31",
+    pickup: "4200 Atlantic Ave, Long Beach, CA",
+    dropoff: "Cedars-Sinai Medical Center, Los Angeles",
+    rideDate: "2026-06-24",
+    appointmentTime: "07:15 AM",
+    mobility: "Stretcher",
+    status: "flagged",
+    summary:
+      "Caller reported the member is in pain and unable to sit upright. AI escalated for urgent stretcher dispatch review.",
+    transcript:
+      "Caller: My father can't sit up, he's in a lot of pain.\nAI: I understand. Is this a medical emergency requiring 911?\nCaller: No, but he can't ride sitting down.\nAI: I'm flagging this for stretcher transport and urgent coordinator review.\nCaller: Please hurry, his appointment is early.",
+  },
+  {
+    id: "CALL-10485",
+    callerName: "Priya Nair",
+    memberId: "MBR-44025",
+    phone: "(424) 555-0136",
+    callDateTime: "2026-06-23 11:18",
+    pickup: "1100 E Ocean Blvd, Long Beach, CA",
+    dropoff: "VA Long Beach Healthcare System",
+    rideDate: "2026-06-27",
+    appointmentTime: "01:45 PM",
+    mobility: "Wheelchair",
+    status: "scheduled",
+    summary:
+      "Afternoon specialist appointment booked. Wheelchair-accessible vehicle requested and confirmed available.",
+    transcript:
+      "AI: I can book a wheelchair-accessible vehicle for Saturday afternoon.\nCaller: That works, the appointment is at one forty-five.\nAI: Pickup at twelve fifty from Ocean Boulevard. Confirmed.\nCaller: Thank you.",
+  },
+  {
+    id: "CALL-10486",
+    callerName: "Walter Boyd",
+    memberId: "MBR-30911",
+    phone: "(562) 555-0107",
+    callDateTime: "2026-06-22 14:50",
+    pickup: "2901 E Spring St, Long Beach, CA",
+    dropoff: "MemorialCare Medical Group, Lakewood",
+    rideDate: "2026-06-22",
+    appointmentTime: "03:30 PM",
+    mobility: "Ambulatory",
+    status: "completed",
+    summary:
+      "Same-day routine follow-up. Ride completed without issues. Return leg was not requested.",
+    transcript:
+      "AI: Your driver is en route and will arrive in eight minutes.\nCaller: Great, I'll be outside.\nAI: Will you need a return ride today?\nCaller: No, my daughter is picking me up.\nAI: Understood. Have a good appointment.",
+  },
+  {
+    id: "CALL-10487",
+    callerName: "Anita Foster",
+    memberId: "MBR-47602",
+    phone: "(323) 555-0184",
+    callDateTime: "2026-06-23 12:05",
+    pickup: "Address unverified — caller unsure of unit number",
+    dropoff: "Kaiser Permanente, Downey",
+    rideDate: "2026-06-28",
+    appointmentTime: "09:00 AM",
+    mobility: "Ambulatory",
+    status: "review",
+    summary:
+      "Pickup address incomplete. Caller could not confirm apartment number. Needs verification before the ride can be dispatched.",
+    transcript:
+      "AI: What is your pickup address?\nCaller: It's on Florence, but I just moved, I don't know the unit.\nAI: I'll note the street and flag the unit number for verification.\nCaller: Okay, I'll find it before then.\nAI: A coordinator will follow up to confirm.",
+  },
+];

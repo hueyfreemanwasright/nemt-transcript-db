@@ -1,0 +1,48 @@
+:root {
+  --canvas: #0f151c;
+  --surface: #18212c;
+  --border: #1f2a37;
+  --text: #e6edf3;
+  --muted: #8a99a8;
+  --accent: #39c2c9;
+
+  --status-scheduled: #3fb67a;
+  --status-review: #f2a33c;
+  --status-flagged: #e5594e;
+  --status-completed: #5b6b7a;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius: 10px;
+  --maxw: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--canvas);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+}
